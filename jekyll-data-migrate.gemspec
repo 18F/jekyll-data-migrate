@@ -7,4 +7,5 @@ Gem::Specification.new do |s|
   s.authors     = ['Greg Boone']
   s.email       = ['gregory.boone@gsa.gov']
   s.version     = '0.0.1'
+  s.files       = ['lib/jekyll-data-migrate.rb']
 end
