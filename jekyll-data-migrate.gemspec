@@ -6,4 +6,5 @@ Gem::Specification.new do |s|
   s.license     = 'CC0'
   s.authors     = ['Greg Boone']
   s.email       = ['gregory.boone@gsa.gov']
+  s.version     = '0.0.1'
 end
