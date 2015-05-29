@@ -1,6 +1,6 @@
-require 'Jekyll'
-Class DataMigrate < Jekyll::Command
+class DataMigrate < Jekyll::Command
   class << self
+
     def init_with_program(prog)
       prog.command(:migrate) do |c|
         c.syntax "migrate [options]"
@@ -8,13 +8,9 @@ Class DataMigrate < Jekyll::Command
         c.option 'from', '-f FROM', 'The data file to read from.'
         c.option 'to', '-t TO', 'The targeted collection.'
         c.action do |args, options|
-          self.echo(options)
+          puts "Migrate #{options['to']} to #{options['from']}"
         end
       end
-    end
-    def echo(opts)
-      puts opts['from']
-      puts opts['to']
     end
   end
 end
