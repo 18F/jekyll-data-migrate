@@ -11,10 +11,10 @@ Class DataMigrate < Jekyll::Command
           self.echo(options)
         end
       end
+    end
     def echo(opts)
       puts opts['from']
       puts opts['to']
-    end
     end
   end
 end
